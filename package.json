@@ -1,0 +1,31 @@
+{
+  "name": "loja-simples",
+  "version": "1.0.0",
+  "description": "Loja simples: landing page + painel de administrador (CRUD de produtos) com Express, TypeScript e Firebase",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "verificar": "tsc --noEmit"
+  },
+  "engines": {
+    "node": "22.x"
+  },
+  "overrides": {
+    "jwks-rsa": {
+      "jose": "4.15.9"
+    }
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "firebase": "^13.0.0",
+    "firebase-admin": "^14.5.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

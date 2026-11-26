@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entrar — Loja Simples</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+  <body>
+    <header class="topo">
+      <a class="marca" href="index.html"><img src="./assets/piurancing.png" alt=""></a>
+      <a class="botao botao-contorno" href="index.html">Voltar para a loja</a>
+    </header>
+
+    <main class="centro">
+      <form id="form-login" class="cartao formulario cartao-login">
+        <h1 id="titulo">Entrar</h1>
+        <p id="subtitulo" class="texto-suave">Acesse o painel para gerenciar os produtos.</p>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" required autocomplete="email" />
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" required minlength="6" autocomplete="current-password" />
+
+        <p id="mensagem" class="mensagem" hidden></p>
+
+        <button type="submit" id="botao-enviar" class="botao">Entrar</button>
+
+        <!-- Alterna o formulário entre "entrar" e "criar conta" -->
+        <button type="button" id="botao-alternar" class="botao-link">
+          Ainda não tem conta? Criar conta
+        </button>
+      </form>
+    </main>
+
+    <script type="module" src="js/login.js"></script>
+  </body>
+</html>

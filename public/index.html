@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loja Simples</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+  <body>
+    <header class="topo">
+      <a class="marca" href="index.html"><img src="./assets/piurancing.png" alt=""></a>
+      <a class="botao botao-contorno" href="admin.html">Área do administrador</a>
+    </header>
+
+    <main>
+      <section class="destaque">
+        <h1>A maior loja de capacetes para galinhas do Brasil</h1>
+        <p>Veja os produtos disponíveis e encontre o que procura.</p>
+      </section>
+
+      <section class="conteudo">
+        <!-- Mensagens (carregando, lista vazia, erro) aparecem aqui -->
+        <p id="aviso" class="aviso">Carregando produtos...</p>
+
+        <!-- Os cartões dos produtos são colocados aqui pelo JavaScript (js/index.js) -->
+        <div id="lista-produtos" class="grade"></div>
+      </section>
+    </main>
+
+    <footer class="rodape">Projeto de estudo — HTML, CSS, JavaScript, Express e Firebase</footer>
+
+    <!-- Modelo de um cartão de produto. O que está dentro de <template> não
+         aparece na página: o JavaScript copia este modelo para cada produto. -->
+    <template id="modelo-produto">
+      <article class="produto">
+        <img class="produto-foto" alt="" />
+        <div class="produto-corpo">
+          <h3 class="produto-nome"></h3>
+          <p class="produto-descricao"></p>
+          <div class="produto-rodape">
+            <span class="preco"></span>
+            <span class="etiqueta"></span>
+          </div>
+        </div>
+      </article>
+    </template>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
